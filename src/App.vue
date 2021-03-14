@@ -1,60 +1,61 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
-      <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
-
     <v-main>
-      <HelloWorld/>
+      <div class="main-container">
+        <div class="form">
+          <v-text-field label="X-values"></v-text-field>
+          <v-text-field label="Y-values"></v-text-field>
+          <v-text-field label="Interpolation X"></v-text-field>
+        </div>
+        <div class="result-field">{{ resultStr }}</div>
+        <div class="show-result-btns">
+          <v-btn elevation="3">Show result</v-btn>
+          <v-btn elevation="3">Show default result</v-btn>
+        </div>
+      </div>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
-  name: 'App',
-
-  components: {
-    HelloWorld,
-  },
-
+  name: "App",
+  components: {},
   data: () => ({
-    //
+    resultStr: "No result",
   }),
+  methods: {},
 };
 </script>
+
+<style scoped>
+.form {
+  width: 70%;
+  padding: 20px;
+}
+
+.result-field {
+  width: 30%;
+  background-color: #e4d8d8;
+  padding: 10px;
+  color: grey;
+}
+
+.show-result-btns {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 3px solid green;
+}
+</style>
