@@ -1,1 +1,1 @@
-# newton-tests-labs
+# newton labs for testing course at BMSTU
