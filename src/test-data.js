@@ -4,9 +4,9 @@ const testData = {
   INTERPOLATION_X: 0.52,
   n: 4,
   getNodesResult: {
-    xNodes: [ 0.3121345, 0.5, 0.67879, 0.7, 0.9 ],
-    yNodes: [ 0.636, 0.4, 0.236, -0.131, -0.2 ]
-  }
-}
+    xNodes: [0.3121345, 0.5, 0.67879, 0.7, 0.9],
+    yNodes: [0.636, 0.4, 0.236, -0.131, -0.2],
+  },
+};
 
-module.exports = testData
+module.exports = testData;
