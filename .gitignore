@@ -1,58 +1,25 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-jspm_packages
-
-# Serverless directories
-.serverless
-
-# testing
-/coverage
-
-# production
-/build
-
-# Numerous always-ignore extensions
-*.diff
-*.err
-*.orig
-*.log
-*.rej
-*.swo
-*.swp
-*.vi
-*~
-*.sass-cache
-.tmp/
-
-# OS or Editor folders
 .DS_Store
-Thumbs.db
-.cache
-.project
-.settings
-.tmproj
-*.esproj
-nbproject
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
-.komodotools
-dwsync.xml
-*.code-workspace
+node_modules
+/dist
 
-# misc
-.idea
-_notes
-_notes.md
-.env
+
+# local env files
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
-.webpack
+.env.*.local
 
+# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+

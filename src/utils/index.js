@@ -1,6 +1,6 @@
 // const data = require('./data')
 const testData = require("./test-data");
-const getCalculation = require("./utils/calculation");
+const getCalculation = require("./calculation");
 const getDividedDiffTable = require("./get-table");
 const getNodes = require("./get-nodes");
 

@@ -1,4 +1,6 @@
-const getDividedDiff = require("./get-divided-diff");
+const getDividedDiff = (x0, x1, y0, y1) => {
+  return (y0 - y1) / (x0 - x1);
+};
 
 // Цикл для построения таблицы
 const getDividedDiffTable = (n, xNodes, yNodes) => {
