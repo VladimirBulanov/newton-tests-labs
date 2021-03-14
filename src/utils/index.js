@@ -1,8 +1,8 @@
-// const data = require('./data')
-const testData = require("./test-data");
-const getCalculation = require("./calculation");
-const getDividedDiffTable = require("./get-table");
-const getNodes = require("./get-nodes");
+import data from "./data";
+import testData from "./test-data";
+import getCalculation from "./calculation";
+import getDividedDiffTable from "./get-table";
+import getNodes from "./get-nodes";
 
 const { X_VALUES, Y_VALUES, INTERPOLATION_X } = testData;
 

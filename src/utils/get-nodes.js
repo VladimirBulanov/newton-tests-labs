@@ -49,4 +49,4 @@ const getNodes = (xValues, yValues, n, interpolationX) => {
   };
 };
 
-module.exports = getNodes;
+export default getNodes;

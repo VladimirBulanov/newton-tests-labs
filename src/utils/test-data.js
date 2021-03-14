@@ -9,4 +9,4 @@ const testData = {
   },
 };
 
-module.exports = testData;
+export default testData;

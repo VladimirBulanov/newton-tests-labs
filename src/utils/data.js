@@ -13,7 +13,7 @@ const Y_VALUES = [
 
 const INTERPOLATION_X = 0.7;
 
-module.exports = {
+export default {
   X_VALUES,
   Y_VALUES,
   INTERPOLATION_X,

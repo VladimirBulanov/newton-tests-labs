@@ -1,12 +1,8 @@
 /* eslint-env jest */
-const getNodes = require("./get-nodes");
-const {
-  X_VALUES,
-  Y_VALUES,
-  n,
-  INTERPOLATION_X,
-  getNodesResult,
-} = require("./test-data");
+import getNodes from "./get-nodes";
+import testData from "./test-data";
+
+const { X_VALUES, Y_VALUES, n, INTERPOLATION_X, getNodesResult } = testData;
 
 const testCases = [
   {

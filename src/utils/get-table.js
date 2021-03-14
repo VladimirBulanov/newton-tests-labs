@@ -34,4 +34,4 @@ const getDividedDiffTable = (n, xNodes, yNodes) => {
   return table;
 };
 
-module.exports = getDividedDiffTable;
+export default getDividedDiffTable;

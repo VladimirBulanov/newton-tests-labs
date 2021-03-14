@@ -1,4 +1,4 @@
-const data = require("./data");
+import data from "./data";
 
 const { INTERPOLATION_X } = data;
 
@@ -18,4 +18,4 @@ const getCalculation = (table, xNodes) => {
   return calculation;
 };
 
-module.exports = getCalculation;
+export default getCalculation;
