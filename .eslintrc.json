@@ -1,0 +1,21 @@
+{
+    "extends": [
+        "standard",
+        "plugin:jest/recommended"
+        // "plugin:prettier/recommended"
+    ],
+    "plugins": [
+        "import",
+        "jest"
+        // "prettier"
+    ],
+    // "plugins": ["prettier"],
+    "rules": {
+        "no-unreachable": "off"
+        //   "prettier/prettier": "warning"
+    },
+    "env": {
+        "node": true,
+        "jest/globals": true
+    }
+}
