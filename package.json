@@ -6,26 +6,14 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "jest --runInBand src",
+    "coverage": "jest --collectCoverageFrom=src/**.js --coverage src",
     "lint-staged": "lint-staged",
-    "coverage": "jest --collectCoverageFrom=src/**.js --coverage src"
-  },
-  "*.js": [
-    "eslint --fix",
-    "git add",
-    "jest --bail --findRelatedTests --runInBand src"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "test": "jest --runInBand src"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vuetify": "^2.4.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -38,7 +26,11 @@
     "jest": "^24.9.0",
     "lint-staged": "^10.5.4",
     "prettier": "2.2.0",
-    "vue-template-compiler": "^2.6.11"
+    "sass": "^1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.2.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
   },
   "eslintConfig": {
     "root": true,
@@ -58,5 +50,18 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "*.js": [
+    "eslint --fix",
+    "git add",
+    "jest --bail --findRelatedTests --runInBand src"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
 }
