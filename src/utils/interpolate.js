@@ -10,20 +10,22 @@ const interpolate = (xValues, yValues, n, interpolationX) => {
     typeof interpolationX === "number";
 
   if (!isValidTypes) {
-    throw new Error("Types are invalid, mission abort!!!");
+    return "Types are invalid, mission abort!!!";
   }
 
+  const sortedX = xValues.sort((a, b) => a - b);
+
   const isValidData =
+    interpolationX > sortedX[0] &&
+    interpolationX < sortedX[sortedX.length - 1] &&
     xValues.length === yValues.length &&
     xValues.filter((val) => typeof val === "number").length ===
       xValues.length &&
     yValues.filter((val) => typeof val === "number").length === yValues.length;
 
   if (!isValidData) {
-    throw new Error("Data is invalid, mission abort!!!");
+    return "Data is invalid, mission abort!!!";
   }
-
-  const sortedX = xValues.sort((a, b) => a - b);
 
   const nodes = getNodes(sortedX, yValues, n, interpolationX);
 
@@ -31,13 +33,9 @@ const interpolate = (xValues, yValues, n, interpolationX) => {
     return null;
   }
 
-  console.log("Nodes: \n", nodes);
-
   const table = getDividedDiffTable(n, nodes.xNodes, nodes.yNodes);
 
-  console.log("Divided diff table: \n", table);
-
-  return getCalculation(table, nodes.xNodes);
+  return getCalculation(table, nodes.xNodes, interpolationX);
 };
 
 export default interpolate;
