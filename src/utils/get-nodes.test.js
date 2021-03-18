@@ -32,11 +32,6 @@ const testCases = [
     actual: getNodes(X_VALUES, Y_VALUES, n, 123456789),
   },
   {
-    description: "Return null if arrays have different length",
-    expected: null,
-    actual: getNodes(X_VALUES, [Y_VALUES[0]], n, INTERPOLATION_X),
-  },
-  {
     description: "Return null if n is less than 0",
     expected: null,
     actual: getNodes(X_VALUES, Y_VALUES, -5, INTERPOLATION_X),

@@ -4,6 +4,19 @@ const getDividedDiff = (x0, x1, y0, y1) => {
 
 // Цикл для построения таблицы
 const getDividedDiffTable = (n, xNodes, yNodes) => {
+  const isValidData =
+    typeof n === "number" &&
+    xNodes &&
+    xNodes.length &&
+    yNodes &&
+    yNodes.length &&
+    xNodes.filter((val) => typeof val === "number").length === xNodes.length &&
+    yNodes.filter((val) => typeof val === "number").length === yNodes.length;
+
+  if (!isValidData) {
+    return null;
+  }
+
   if (!n) {
     return [yNodes];
   }

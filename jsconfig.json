@@ -1,0 +1,10 @@
+{
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "include": ["./src/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "components/*": ["src/components/*"]
+    }
+  }
+}
