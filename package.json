@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "coverage": "jest --collectCoverageFrom=src/**.js --coverage src",
+    "coverage": "jest --collectCoverageFrom=src/utils/**.js --coverage src",
     "lint-staged": "lint-staged",
     "test": "jest --runInBand src"
   },

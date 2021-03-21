@@ -29,6 +29,11 @@ const testCases = [
     ),
   },
   {
+    description: "Return null if n is less than 0",
+    expected: null,
+    actual: getDividedDiffTable(-5, nodes.xNodes, nodes.yNodes),
+  },
+  {
     description: "Return correct result if all arguments are correct",
     expected: getTableResult,
     actual: getDividedDiffTable(n, nodes.xNodes, nodes.yNodes),

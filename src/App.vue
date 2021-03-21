@@ -26,6 +26,7 @@
 <script>
 import defaultData from "./utils/data";
 import interpolate from "./utils/interpolate";
+
 export default {
   name: "App",
   components: {},

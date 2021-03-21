@@ -19,6 +19,11 @@ const testData = {
     [-497.4459147283503, 4984.533668019978],
     [29180.342227542194],
   ],
+  interpolateResult: 0.636,
+  errors: {
+    TYPES: "Types are invalid, mission abort!!!",
+    DATA: "Data is invalid, mission abort!!!",
+  },
 };
 
 export default testData;

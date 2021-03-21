@@ -6,6 +6,7 @@ const getDividedDiff = (x0, x1, y0, y1) => {
 const getDividedDiffTable = (n, xNodes, yNodes) => {
   const isValidData =
     typeof n === "number" &&
+    n > -1 &&
     xNodes &&
     xNodes.length &&
     yNodes &&
@@ -15,10 +16,6 @@ const getDividedDiffTable = (n, xNodes, yNodes) => {
 
   if (!isValidData) {
     return null;
-  }
-
-  if (!n) {
-    return [yNodes];
   }
 
   const table = [];
